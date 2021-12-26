@@ -37,3 +37,17 @@ git reset --soft xx版本号xxxx git reset --hard xx版本号xxx
 
 HEAD就代表当前，所以上一个版本其实就是当前-1
  
+新建分支：
+git branch name
+
+查看本地所有仓库：
+git branch -a
+
+删除本地仓库：
+git branch -d name
+
+查看所有远程仓库：
+git remote -v
+
+删除远程origin仓库的分支：
+git push origin --delete name

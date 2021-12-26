@@ -43,6 +43,16 @@ git branch name
 查看本地所有仓库：
 git branch -a
 
+新建分支并切换到该分支
+git checkout-b dev
+等于小面两句
+git branch dev
+git checkout dev
+合并主分支
+git merge master
+上传到远端仓库：
+git push origin dev
+
 删除本地仓库：
 git branch -d name
 
@@ -51,3 +61,7 @@ git remote -v
 
 删除远程origin仓库的分支：
 git push origin --delete name
+
+remote端已经删掉，为什么用git branch -a还是能看到呢？ 
+其实我们看到的，只是前面用git fetch 保存到本地的缓存信息而已。
+git fetch --prune origin or git fetch --p origin
